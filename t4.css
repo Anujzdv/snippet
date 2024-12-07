@@ -1,0 +1,220 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0D1117;
+    color: #C9D1D9;
+    margin-top: 4rem;
+  }
+  
+  
+  .navbar {
+    width: 100%;
+    position:fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    /* background: #333; linear-gradient(45deg, #6a11cb, #2575fc); */
+    background-color:#58A6FF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /*for nav bar above all*/
+     
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight:normal;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color:  #0D1117;
+  }
+  .tagline{
+    text-align: center;
+    color: #58A6FF;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 3px;
+  }
+  /* Layout for Editor and Snippets */
+  .editor-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .snippet-container {
+    width: 34%;
+    padding: 1rem;
+    background: #161B22; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(93, 212, 212, 0.902);
+  }
+  
+  .editor-box {
+    width: 60%;
+    padding: 1rem;
+    background: #161B22; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(5, 148, 243, 0.902);
+  }
+  
+  .editor-header {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .language-selector {
+    
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+  }
+  
+  .lang-btn {
+    background:  #161B22; 
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .lang-btn:hover {
+    background:#58A6FF;
+  }
+  
+  .editor {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    border: 1px solid #2e3031;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #f8f8f2;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .post_btn{
+    display: flex;
+    justify-content:flex-end;
+  }
+
+  #submit{
+    background:#187ef3;
+    border: none;
+    border-radius: 5px;
+    color: white;
+   align-items: right;
+    padding: 8px;
+    margin: 5px;
+    text-align: right;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#submit:hover{
+    background:#3692fb;
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+   
+}
+  
+  /* Snippet Card */
+  .snippet-card {
+    background: #58A6FF;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: white;
+    border-radius: 8px;
+    border-color:#0D1117;
+    /* box-shadow: 0 2px 5px rgba(252, 251, 251, 0.69); */
+  }
+  
+  .snippet-card pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .snippet-card .like-btn, .snippet-card .follow-btn {
+    background:#0D1117;
+    color: white;
+    padding: 0.5rem;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .snippet-card .like-btn:hover, .snippet-card .follow-btn:hover {
+    background: white;
+    color:#58A6FF;
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .snippet-card .comment-btn {
+    background:#0D1117;;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+  }
+  .snippet-card .comment-btn:hover{
+    background: white;
+    color:#58A6FF;
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+
+  }
+  
+  .snippet-card .comment-input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 95%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #58A6FF;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  
+   @media (max-width: 768px) { 
+    .editor-container {
+      flex-direction: column;
+    }
+    .snippet-container, .editor-box {
+      width: 100%;
+    }
+  }
+
+  

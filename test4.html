@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Snippet Sharing</title>
+  <link rel="stylesheet" href="t4.css">
+  <script src="https://cdn.jsdelivr.net/npm/brace@0.11.1/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-python.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-java.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-c.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-cpp.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Syntax|Flow </div>
+      <ul class="nav-links">
+        <li><a href="#create-snippet">Create</a></li>
+        <li><a href="#snippets">Snippets</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="tagline">
+    <p>Code Together, Grow Together!</p>
+
+  </div>
+
+  <section id="create-snippet">
+    <div class="editor-container">
+      <div class="editor-box">
+        <div class="editor-header">
+          <div class="language-selector">
+            <button class="lang-btn" onclick="setLanguage('python')">Python</button>
+            <button class="lang-btn" onclick="setLanguage('java')">Java</button>
+            <button class="lang-btn" onclick="setLanguage('c')">C</button>
+            <button class="lang-btn" onclick="setLanguage('cpp')">C++</button>
+          </div>
+        </div>
+        <div id="editor" class="editor"></div>
+       <div class="post_btn"> <button id="submit" class="btn">Post Snippet</button> </div>
+      </div>
+
+      <div class="snippet-container">
+        <h3>Recent Snippets</h3>
+        <div class="snippets-list">
+          <!-- Snippets will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Syntax|Flow </p>
+    <P>Develop by Anuj Zdv</P>
+  </footer>
+
+  <script src="t4.js"></script>
+</body>
+</html>
